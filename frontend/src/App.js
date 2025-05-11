@@ -1,53 +1,36 @@
-import { useEffect } from "react";
-import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router";
-import axios from "axios";
+import React, { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Home from "./pages/Home";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
+// Scroll to top component
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
   useEffect(() => {
-    helloWorldApi();
-  }, []);
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+  return null;
+}
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
+    <Router>
+      <ScrollToTop />
+      <Layout>
         <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
+          <Route path="/" element={<Home />} />
+          {/* Placeholder routes */}
+          <Route path="/servicos" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Serviços</h1><p>Página em desenvolvimento</p></div>} />
+          <Route path="/metodologia" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Metodologia</h1><p>Página em desenvolvimento</p></div>} />
+          <Route path="/casos" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Casos</h1><p>Página em desenvolvimento</p></div>} />
+          <Route path="/sobre" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Sobre</h1><p>Página em desenvolvimento</p></div>} />
+          <Route path="/contato" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Contato</h1><p>Página em desenvolvimento</p></div>} />
+          <Route path="*" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Página não encontrada</h1><p>A página que você está procurando não existe.</p></div>} />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </Layout>
+    </Router>
   );
 }
 
