@@ -23,7 +23,11 @@ const Header = () => {
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if (isMenuOpen && e.target.closest('.mobile-menu-container') === null) {
+      const menuButton = document.querySelector('.md\\:hidden button');
+      // Don't close menu if click is on menu button or its children
+      if (isMenuOpen && 
+         e.target.closest('.mobile-menu-container') === null &&
+         !(menuButton && (e.target === menuButton || menuButton.contains(e.target)))) {
         setIsMenuOpen(false);
       }
     };
