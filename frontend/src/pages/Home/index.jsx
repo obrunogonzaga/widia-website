@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
-import HeroSection from '../components/sections/HeroSection';
-import ServicesSection from '../components/sections/ServicesSection';
-import MethodologySection from '../components/sections/MethodologySection';
-import MetricsSection from '../components/sections/MetricsSection';
-import CasesSection from '../components/sections/CasesSection';
-import CTASection from '../components/sections/CTASection';
+import HeroSection from '../../components/sections/HeroSection';
+import ServicesSection from '../../components/sections/ServicesSection';
+import MethodologySection from '../../components/sections/MethodologySection';
+import MetricsSection from '../../components/sections/MetricsSection';
+import CasesSection from '../../components/sections/CasesSection';
+import CTASection from '../../components/sections/CTASection';
 
 const Home = () => {
   // Apply page title and meta tags
