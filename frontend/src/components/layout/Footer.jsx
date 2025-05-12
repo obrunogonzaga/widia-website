@@ -112,7 +112,7 @@ const Footer = () => {
                       <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
                     </svg>
                   </span>
-                  <a href="mailto:contato@bgtech.com.br" className="text-gray-400 hover:text-neon-green transition-colors">contato@bgtech.com.br</a>
+                  <a href="mailto:contato@bgtech.com" className="text-gray-400 hover:text-neon-green transition-colors">contato@bgtech.com</a>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-green mr-2">
@@ -120,7 +120,7 @@ const Footer = () => {
                       <path fillRule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                     </svg>
                   </span>
-                  <a href="tel:+5511999999999" className="text-gray-400 hover:text-neon-green transition-colors">(11) 99999-9999</a>
+                  <a href="tel:+5541995203400" className="text-gray-400 hover:text-neon-green transition-colors">(41) 9 9520-3400</a>
                 </li>
               </ul>
             </div>
