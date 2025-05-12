@@ -6,6 +6,7 @@ import Services from "./pages/Services";
 import Methodology from "./pages/Methodology";
 import Cases from "./pages/Cases";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 // Scroll to top component
 function ScrollToTop() {
@@ -30,7 +31,7 @@ function App() {
           <Route path="/casos" element={<Cases />} />
           {/* Placeholder routes */}
           <Route path="/sobre" element={<About />} />
-          <Route path="/contato" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Contato</h1><p>Página em desenvolvimento</p></div>} />
+          <Route path="/contato" element={<Contact />} />
           <Route path="*" element={<div className="container-custom py-32 min-h-screen"><h1 className="text-4xl mb-4">Página não encontrada</h1><p>A página que você está procurando não existe.</p></div>} />
         </Routes>
       </Layout>
