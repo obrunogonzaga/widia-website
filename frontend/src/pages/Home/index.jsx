@@ -9,7 +9,7 @@ import CTASection from '../../components/sections/CTASection';
 const Home = () => {
   // Apply page title and meta tags
   useEffect(() => {
-    document.title = 'BGTech | Consultoria de IA para Empresas';
+    document.title = 'Widia Digital | Consultoria de IA para Empresas';
   }, []);
 
   return (

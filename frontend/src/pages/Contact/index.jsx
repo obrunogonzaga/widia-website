@@ -7,7 +7,7 @@ import Button from '../../components/ui/Button';
 const ContactPage = () => {
   // Apply page title and meta tags
   useEffect(() => {
-    document.title = 'BGTech | Contato';
+    document.title = 'Widia Digital | Contato';
   }, []);
 
   // Form state
@@ -93,7 +93,7 @@ const ContactPage = () => {
         // The backend should then:
         // 1. Validate the data
         // 2. Store the submission in MongoDB
-        // 3. Send notification email to contato@bgtech.com
+        // 3. Send notification email to contato@widiadigital.com
         // 4. Optionally send confirmation email to the user
 
         // For now, we'll simulate a successful submission
@@ -379,11 +379,11 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold mb-1">E-mail</h3>
-                      <a 
-                        href="mailto:contato@bgtech.com" 
+                      <a
+                        href="mailto:contato@widiadigital.com"
                         className="text-gray-300 hover:text-neon-green transition-colors"
                       >
-                        contato@bgtech.com
+                        contato@widiadigital.com
                       </a>
                       <p className="text-sm text-gray-400 mt-1">
                         Respondemos em até 24 horas úteis
@@ -465,7 +465,7 @@ const ContactPage = () => {
                 <div className="h-full w-full relative">
                   <img 
                     src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                    alt="BGTech Office Location" 
+                    alt="Widia Digital Office Location" 
                     className="h-full w-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-bgdark to-transparent"></div>

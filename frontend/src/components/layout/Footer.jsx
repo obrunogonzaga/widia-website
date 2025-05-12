@@ -57,8 +57,8 @@ const Footer = () => {
             {/* Logo and about */}
             <div className="md:col-span-4">
               <Link to="/" className="text-2xl font-bold flex items-center mb-4">
-                <span className="text-white">BG</span>
-                <span className="text-neon-green">Tech</span>
+                <span className="text-white">Widia</span>
+                <span className="text-neon-green">Digital</span>
               </Link>
               <p className="text-gray-400 mb-6">
                 Consultoria boutique especializada em criar automações e copilots baseados em IA para PMEs brasileiras.
@@ -112,7 +112,7 @@ const Footer = () => {
                       <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
                     </svg>
                   </span>
-                  <a href="mailto:contato@bgtech.com" className="text-gray-400 hover:text-neon-green transition-colors">contato@bgtech.com</a>
+                  <a href="mailto:contato@widiadigital.com" className="text-gray-400 hover:text-neon-green transition-colors">contato@widiadigital.com</a>
                 </li>
                 <li className="flex items-start">
                   <span className="text-neon-green mr-2">
@@ -129,7 +129,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="mt-12 pt-6 border-t border-white/10 text-center md:text-left text-sm text-gray-400">
             <p>
-              © {currentYear} BGTech. Todos os direitos reservados.
+              © {currentYear} Widia Digital. Todos os direitos reservados.
             </p>
           </div>
         </div>

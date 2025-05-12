@@ -7,7 +7,7 @@ import Button from '../../components/ui/Button';
 const AboutPage = () => {
   // Apply page title and meta tags
   useEffect(() => {
-    document.title = 'BGTech | Sobre Nós';
+    document.title = 'Widia Digital | Sobre Nós';
   }, []);
 
   // Refs for animations
@@ -140,7 +140,7 @@ const AboutPage = () => {
               Somos uma consultoria especializada em transformar negócios através da Inteligência Artificial e automação inteligente
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              Na BGTech, nossa missão é democratizar o acesso à tecnologia de ponta para empresas de todos os tamanhos, com soluções personalizadas que geram resultados concretos.
+              Na Widia Digital, nossa missão é democratizar o acesso à tecnologia de ponta para empresas de todos os tamanhos, com soluções personalizadas que geram resultados concretos.
             </p>
           </motion.div>
         </div>
@@ -231,7 +231,7 @@ const AboutPage = () => {
               className="prose prose-lg prose-invert max-w-none"
             >
               <p>
-                A BGTech nasceu em 2019 da visão de Bruno Gonzaga, que após anos trabalhando com desenvolvimento de software para grandes corporações, identificou uma lacuna significativa: empresas de médio porte no Brasil tinham pouco acesso a soluções de IA verdadeiramente personalizadas para suas necessidades.
+                A Widia Digital nasceu em 2019 da visão de Bruno Gonzaga, que após anos trabalhando com desenvolvimento de software para grandes corporações, identificou uma lacuna significativa: empresas de médio porte no Brasil tinham pouco acesso a soluções de IA verdadeiramente personalizadas para suas necessidades.
               </p>
               
               <p>

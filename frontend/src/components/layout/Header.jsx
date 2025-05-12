@@ -88,12 +88,12 @@ const Header = () => {
     >
       <div className="container-custom flex justify-between items-center">
         {/* Logo */}
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           className="text-2xl font-bold flex items-center"
         >
-          <span className="text-white">BG</span>
-          <span className="text-neon-green">Tech</span>
+          <span className="text-white">Widia</span>
+          <span className="text-neon-green">Digital</span>
         </Link>
         
         {/* Desktop Navigation */}
