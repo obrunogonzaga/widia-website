@@ -192,7 +192,7 @@ const CasesPage = () => {
       quote: "O sistema de IA para controle de qualidade superou todas as nossas expectativas. Conseguimos aumentar a produção e, ao mesmo tempo, melhorar drasticamente a qualidade dos produtos entregues aos clientes.",
       author: "Marcos Oliveira",
       role: "Gerente de Produção",
-      image: "https://images.unsplash.com/photo-1581091226033-c6e1f6b93c14?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1565343122714-6ead24490186?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
       results: 'O sistema de visão computacional transformou o controle de qualidade da empresa, eliminando quase completamente as devoluções por defeitos não detectados e acelerando o processo de produção. A solução se pagou em menos de 7 meses através da redução de custos com garantia e retrabalho.',
       relatedCases: ['ecommerce-recommendation', 'nutrition-bot']
     }
