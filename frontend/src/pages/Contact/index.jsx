@@ -380,10 +380,10 @@ const ContactPage = () => {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">E-mail</h3>
                       <a
-                        href="mailto:contato@widiadigital.com"
+                        href="mailto:contato@widia.io"
                         className="text-gray-300 hover:text-neon-green transition-colors"
                       >
-                        contato@widiadigital.com
+                        contato@widia.io
                       </a>
                       <p className="text-sm text-gray-400 mt-1">
                         Respondemos em até 24 horas úteis
@@ -421,8 +421,8 @@ const ContactPage = () => {
                     <div>
                       <h3 className="text-lg font-semibold mb-1">Endereço</h3>
                       <p className="text-gray-300">
-                        Av. Cândido de Abreu, 660 - Centro Cívico<br />
-                        Curitiba, PR, 80530-000
+                        R. Francisco Rocha, 198 - Batel<br />
+                        Curitiba, PR, 80420-130
                       </p>
                       <p className="text-sm text-gray-400 mt-1">
                         Atendimento com hora marcada
@@ -460,19 +460,20 @@ const ContactPage = () => {
                 </div>
               </GlassCard>
               
-              {/* Map or Image */}
+              {/* Google Maps Embed */}
               <GlassCard className="overflow-hidden h-72">
                 <div className="h-full w-full relative">
-                  <img 
-                    src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-                    alt="Widia Digital Office Location" 
-                    className="h-full w-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-bgdark to-transparent"></div>
+                  <iframe
+                    title="Widia Digital Office Location"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.048587608577!2d-49.29088642472183!3d-25.43211183790508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3836807363f%3A0xdbed6e359826fcba!2sR.%20Francisco%20Rocha%2C%20198%20-%20Batel%2C%20Curitiba%20-%20PR%2C%2080420-130!5e0!3m2!1sen!2sbr!4v1715734150962!5m2!1sen!2sbr"
+                    className="h-full w-full border-0"
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                   <div className="absolute bottom-4 left-4 right-4">
                     <Button 
-                      as="a"
-                      href="https://maps.google.com" 
+                      href="https://maps.app.goo.gl/XKrwEbx1gCi2hTuM7" 
                       target="_blank"
                       variant="primary"
                       size="small"
