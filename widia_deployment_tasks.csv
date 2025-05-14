@@ -1,0 +1,34 @@
+TYPE;CONTENT;DESCRIPTION;PRIORITY;INDENT;AUTHOR;RESPONSIBLE;DATE;DATE_LANG;TIMEZONE
+task;Log in to Hostinger VPS via SSH;Connect to your VPS using the credentials provided by Hostinger;3;1;;;;;UTC
+task;Update system packages;Ensure your system is up-to-date before installing any new software;3;1;;;;;UTC
+task;Install required dependencies;Install necessary packages: curl wget git;3;1;;;;;UTC
+task;Run the Coolify installer script;One-command installation of the entire Coolify platform;2;1;;;;;UTC
+task;Access the Coolify dashboard;Open web interface at http://your-vps-ip:8000;3;1;;;;;UTC
+task;Complete admin registration process;Create the first admin user for Coolify platform;2;1;;;;;UTC
+task;Log in to domain registrar for widia.io;Access your domain control panel;2;1;;;;;UTC
+task;Create A record for root domain;Point widia.io directly to your VPS IP address;1;1;;;;;UTC
+task;Create A record for www subdomain;Point www.widia.io to your VPS IP address;2;1;;;;;UTC
+task;Create A record for API subdomain;Point api.widia.io to your VPS for backend access;2;1;;;;;UTC
+task;Add wildcard record for additional subdomains;Optional: Allow any subdomain to resolve to your VPS;4;1;;;;;UTC
+task;Wait for DNS propagation;Allow time for DNS changes to take effect globally (can take 24-48 hours);4;1;;;;;UTC
+task;Add server to Coolify;Navigate to Resources → New Resource → Server in Coolify dashboard;3;1;;;;;UTC
+task;Configure server connection details;Enter VPS IP address and authentication information;3;1;;;;;UTC
+task;Verify server connection in Coolify;Confirm Coolify can successfully connect to and manage your VPS;2;1;;;;;UTC
+task;Create new application in Coolify;Start the process of deploying your application;3;1;;;;;UTC
+task;Connect Git repository to Coolify;Link your code repository to enable automatic deployments;2;1;;;;;UTC
+task;Configure frontend deployment;Set up Static Site deployment for React frontend;2;1;;;;;UTC
+task;Set build command for frontend;Configure build process: cd frontend && yarn build;3;1;;;;;UTC
+task;Set output directory for frontend;Specify build output: frontend/build;3;1;;;;;UTC
+task;Configure backend deployment;Set up Docker Compose deployment for FastAPI backend;2;1;;;;;UTC
+task;Add environment variables for backend;Configure database connections and other sensitive settings;3;1;;;;;UTC
+task;Configure domain widia.io for frontend;Link your main domain to the frontend application;1;1;;;;;UTC
+task;Configure domain api.widia.io for backend;Link API subdomain to your backend service;1;1;;;;;UTC
+task;Enable Auto HTTPS in application settings;Set up automatic SSL certificate generation with Let's Encrypt;1;1;;;;;UTC
+task;Verify SSL certificate issuance;Confirm certificates are active in the SSL/TLS tab;2;1;;;;;UTC
+task;Test frontend site;Verify the website is accessible and functioning at https://widia.io;1;1;;;;;UTC
+task;Test backend API;Ensure API endpoints are responding at https://api.widia.io;1;1;;;;;UTC
+task;Verify frontend-backend connectivity;Test features that require communication between frontend and API;1;1;;;;;UTC
+task;Set up automatic deployments from Git;Configure continuous deployment from your repository;3;1;;;;;UTC
+task;Configure monitoring alerts;Set up notifications for server or application issues;3;1;;;;;UTC
+task;Create database backup schedule;Ensure your data is protected with regular automated backups;2;1;;;;;UTC
+task;Document deployment process for team;Share Coolify access and document maintenance procedures;3;1;;;;;UTC
