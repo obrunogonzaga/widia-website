@@ -17,6 +17,17 @@ services:
       - mongo
     networks:
       - widia-network
+      - coolify
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.widia.rule=Host(`widia.io`)"
+      - "traefik.http.routers.widia.entrypoints=http"
+      - "traefik.http.routers.widia.middlewares=redirect-to-https"
+      - "traefik.http.routers.widia-secure.rule=Host(`widia.io`)"
+      - "traefik.http.routers.widia-secure.entrypoints=https"
+      - "traefik.http.routers.widia-secure.tls=true"
+      - "traefik.http.routers.widia-secure.tls.certresolver=letsencrypt"
+      - "traefik.http.services.widia.loadbalancer.server.port=8080"
 
   mongo:
     image: mongo:6
@@ -29,6 +40,8 @@ services:
 
 networks:
   widia-network:
+  coolify:
+    external: true
 
 volumes:
   mongo-data:
