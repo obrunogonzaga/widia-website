@@ -93,7 +93,7 @@ const ContactPage = () => {
         // The backend should then:
         // 1. Validate the data
         // 2. Store the submission in MongoDB
-        // 3. Send notification email to contato@widiadigital.com
+        // 3. Send notification email to contato@widia.io
         // 4. Optionally send confirmation email to the user
 
         // For now, we'll simulate a successful submission
