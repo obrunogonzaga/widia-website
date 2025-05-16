@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Layout from "./components/layout/Layout";
-import Home from "./pages/Home";
-import Services from "./pages/Services";
-import Methodology from "./pages/Methodology";
-import Cases from "./pages/Cases";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./pages/Home/index";
+import Services from "./pages/Services/index";
+import Methodology from "./pages/Methodology/index";
+import Cases from "./pages/Cases/index";
+import About from "./pages/About/index";
+import Contact from "./pages/Contact/index";
 
 // Scroll to top component
 function ScrollToTop() {

@@ -23,6 +23,57 @@ docker-compose down
 docker-compose down -v
 ```
 
+### Email Configuration
+
+The contact form requires email configuration. You have two ways to configure it:
+
+#### 1. Using .env File (Recommended)
+
+Create a `.env` file in the backend directory using the provided `.env.example` template:
+
+```bash
+# Copy the example file
+cp backend/.env.example backend/.env
+
+# Edit the .env file with your actual credentials
+nano backend/.env
+```
+
+#### 2. Using Environment Variables
+
+Alternatively, set the following environment variables:
+
+```bash
+# Email settings
+SMTP_SERVER=smtp.zoho.com   # SMTP server address
+SMTP_PORT=587               # 587 for TLS, 465 for SSL
+SMTP_USERNAME=contato@widia.io  # Email used to send messages
+SMTP_PASSWORD=your_password     # Your Zoho email password
+
+# Example with Docker
+docker run -p 8080:8080 \
+  -e MONGO_URL="mongodb://host.docker.internal:27017" \
+  -e DB_NAME="test_database" \
+  -e SMTP_SERVER="smtp.zoho.com" \
+  -e SMTP_PORT=587 \
+  -e SMTP_USERNAME="contato@widia.io" \
+  -e SMTP_PASSWORD="your_password" \
+  widia-website
+
+# Example with Docker Compose (add to docker-compose.yml environment section)
+# environment:
+#   - MONGO_URL=mongodb://mongodb:27017
+#   - DB_NAME=widia_db
+#   - SMTP_SERVER=smtp.zoho.com
+#   - SMTP_PORT=587
+#   - SMTP_USERNAME=contato@widia.io
+#   - SMTP_PASSWORD=your_password
+```
+
+**Note:** 
+- When using port 465, the code will automatically use SSL instead of TLS
+- The .env file is gitignored so your credentials won't be committed to the repository
+
 ## Manual Setup
 
 ### Frontend (React)

@@ -87,17 +87,20 @@ const ContactPage = () => {
       setIsSubmitting(true);
       
       try {
-        // TODO: Replace this simulation with actual API call
-        // In the future, this should send data to a backend endpoint like:
-        // POST /api/contact with the form data
-        // The backend should then:
-        // 1. Validate the data
-        // 2. Store the submission in MongoDB
-        // 3. Send notification email to contato@widia.io
-        // 4. Optionally send confirmation email to the user
-
-        // For now, we'll simulate a successful submission
-        await new Promise(resolve => setTimeout(resolve, 1500));
+        // Send data to backend API
+        console.log('Submitting form:', formData);
+        const response = await fetch('/api/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+        });
+        console.log('Response status:', response.status);
+        
+        if (!response.ok) {
+          throw new Error(`Server responded with ${response.status}: ${response.statusText}`);
+        }
         
         // Reset form after successful submission
         setFormData({
