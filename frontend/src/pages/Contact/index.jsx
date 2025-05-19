@@ -26,13 +26,52 @@ const ContactPage = () => {
   const [submitSuccess, setSubmitSuccess] = useState(false);
   const [submitError, setSubmitError] = useState(false);
 
+  // Format phone number to "(XX) XXXXX-XXXX" format
+  const formatPhoneNumber = (phoneNumber) => {
+    // Strip all non-numeric characters from the phone
+    const digits = phoneNumber.replace(/\D/g, '');
+    
+    if (digits.length === 0) return '';
+    
+    // Format based on number of digits
+    if (digits.length <= 2) {
+      return `(${digits}`;
+    } else if (digits.length <= 7) {
+      return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+    } else {
+      // Handle proper 11-digit Brazilian mobile phone formatting
+      return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7, 11)}`;
+    }
+  };
+
   // Handle form input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevData => ({
-      ...prevData,
-      [name]: value
-    }));
+    
+    // Apply phone formatting if this is the phone field
+    if (name === 'phone') {
+      // If the user is pasting or entering a complete number
+      if (value.replace(/\D/g, '').length >= 10) {
+        const formattedPhone = formatPhoneNumber(value);
+        setFormData(prevData => ({
+          ...prevData,
+          [name]: formattedPhone
+        }));
+      } else {
+        // For normal typing, format as they type
+        const formattedPhone = formatPhoneNumber(value);
+        setFormData(prevData => ({
+          ...prevData,
+          [name]: formattedPhone
+        }));
+      }
+    } else {
+      // For all other fields, just set the value normally
+      setFormData(prevData => ({
+        ...prevData,
+        [name]: value
+      }));
+    }
 
     // Clear error when field is edited
     if (errors[name]) {
@@ -60,8 +99,13 @@ const ContactPage = () => {
     }
     
     // Phone validation (optional but validate if provided)
-    if (formData.phone && !/^(\([0-9]{2}\) ?|[0-9]{2}-)?[0-9]{4,5}-?[0-9]{4}$/.test(formData.phone)) {
-      newErrors.phone = 'Telefone inválido';
+    if (formData.phone) {
+      // Check if it's either raw numbers or properly formatted
+      const digitsOnly = formData.phone.replace(/\D/g, '');
+      if (!(digitsOnly.length === 10 || digitsOnly.length === 11) && 
+          !/^(\([0-9]{2}\) ?|[0-9]{2}-)?[0-9]{4,5}-?[0-9]{4}$/.test(formData.phone)) {
+        newErrors.phone = 'Telefone inválido';
+      }
     }
     
     // Message validation
@@ -85,16 +129,27 @@ const ContactPage = () => {
     
     if (validateForm()) {
       setIsSubmitting(true);
+
+      // Create a copy of the form data and format phone if needed
+      const formDataToSubmit = { ...formData };
+      
+      // If phone is just digits, format it properly
+      if (formDataToSubmit.phone) {
+        const digits = formDataToSubmit.phone.replace(/\D/g, '');
+        if (digits.length === 10 || digits.length === 11) {
+          formDataToSubmit.phone = formatPhoneNumber(digits);
+        }
+      }
       
       try {
         // Send data to backend API
-        console.log('Submitting form:', formData);
+        console.log('Submitting form:', formDataToSubmit);
         const response = await fetch('/api/contact', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(formData),
+          body: JSON.stringify(formDataToSubmit),
         });
         console.log('Response status:', response.status);
         
