@@ -23,6 +23,8 @@ FROM nginx:stable-alpine
 COPY --from=frontend-build /app/build /usr/share/nginx/html
 # Copy backend
 COPY --from=backend /app /backend
+# Copy blog content for backend access
+COPY --from=frontend-build /app/src/content/blog /frontend/src/content/blog
 # Copy nginx config
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY entrypoint.sh /entrypoint.sh
