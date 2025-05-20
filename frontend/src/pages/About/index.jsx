@@ -77,7 +77,7 @@ const AboutPage = () => {
   const values = [
     {
       title: 'Inovação Prática',
-      description: 'Buscamos constantemente novas tecnologias e métodos, mas sempre com foco em aplicações práticas que geram resultados mensuráveis.',
+      description: 'Testamos o que há de novo, entregamos o que gera resultado agora. Sem hype vazio, só ROI.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
@@ -86,7 +86,7 @@ const AboutPage = () => {
     },
     {
       title: 'Transparência',
-      description: 'Acreditamos em relações de confiança. Por isso, mantemos total transparência em nossos processos, custos e resultados esperados.',
+      description: 'Processo aberto, números na mesa. Zero surpresa, zero letra miúda.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -96,7 +96,7 @@ const AboutPage = () => {
     },
     {
       title: 'Excelência Técnica',
-      description: 'Nosso time é formado por especialistas em suas áreas, comprometidos com o mais alto padrão de qualidade técnica em todos os projetos.',
+      description: 'Código limpo, modelo robusto, entrega em produção. Qualidade que aguenta escala.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
@@ -105,7 +105,7 @@ const AboutPage = () => {
     },
     {
       title: 'Foco no Cliente',
-      description: 'Entendemos profundamente o negócio de cada cliente para oferecer soluções verdadeiramente alinhadas com seus objetivos estratégicos.',
+      description: 'Ganhamos quando você ganha. A solução nasce dos seus objetivos e termina com a meta batida.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -137,10 +137,10 @@ const AboutPage = () => {
               Sobre Nós
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Somos uma consultoria especializada em transformar negócios através da Inteligência Artificial e automação inteligente
+              Somos uma consultoria especializada em impulsionar negócios por meio de soluções práticas e inovadoras em Inteligência Artificial e automação inteligente.
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-              Na Widia Digital, nossa missão é democratizar o acesso à tecnologia de ponta para empresas de todos os tamanhos, com soluções personalizadas que geram resultados concretos.
+              Na Widia Digital, nossa missão é democratizar o acesso à tecnologia avançada, criando soluções personalizadas e acessíveis que geram resultados concretos para empresas de todos os tamanhos.
             </p>
           </motion.div>
         </div>
@@ -156,7 +156,7 @@ const AboutPage = () => {
           >
             <SectionTitle
               title="Nossa Missão & Visão"
-              subtitle="O que nos move e para onde estamos indo"
+              subtitle="O que nos impulsiona & onde queremos chegar"
               gradient={true}
             />
           </motion.div>
@@ -175,10 +175,10 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-2xl font-semibold mb-4">Nossa Missão</h3>
                 <p className="text-gray-300">
-                  Transformar empresas através da tecnologia, desenvolvendo soluções de IA e automação que aumentam a eficiência, reduzem custos e impulsionam o crescimento de negócios brasileiros.
+                  Na Widia, existimos para resolver problemas reais. Aplicamos Inteligência Artificial e automações práticas que simplificam operações, cortam custos desnecessários e ajudam empresas brasileiras a crescerem mais rápido.
                 </p>
                 <p className="text-gray-300 mt-4">
-                  Acreditamos que toda empresa, independente do tamanho ou setor, merece acesso a ferramentas tecnológicas de ponta que as tornem mais competitivas e preparadas para o futuro.
+                  Acreditamos que tecnologia boa é tecnologia que gera resultado, ponto.
                 </p>
               </GlassCard>
             </motion.div>
@@ -197,10 +197,10 @@ const AboutPage = () => {
                 </div>
                 <h3 className="text-2xl font-semibold mb-4">Nossa Visão</h3>
                 <p className="text-gray-300">
-                  Ser a principal referência em soluções de IA para o mercado brasileiro, reconhecida pela excelência técnica e pelo impacto positivo que geramos para nossos clientes.
+                  Em cinco anos, fazer da Widia o hub que coloca a IA no centro da economia brasileira. Queremos que 'fazer com IA' seja sinônimo de 'fazer com a Widia'.
                 </p>
                 <p className="text-gray-300 mt-4">
-                  Queremos construir um futuro onde empresas brasileiras utilizem inteligência artificial não apenas como diferencial competitivo, mas como parte fundamental de suas operações diárias.
+                  Quando qualquer empresa — da esquina ao topo da Faria Lima — pensar em processos que se otimizam sozinhos e ganho de escala em tempo recorde, nosso nome precisa ser o primeiro que vem à mente.
                 </p>
               </GlassCard>
             </motion.div>
@@ -231,77 +231,91 @@ const AboutPage = () => {
               className="prose prose-lg prose-invert max-w-none"
             >
               <p>
-                A Widia Digital nasceu em 2019 da visão de Bruno Gonzaga, que após anos trabalhando com desenvolvimento de software para grandes corporações, identificou uma lacuna significativa: empresas de médio porte no Brasil tinham pouco acesso a soluções de IA verdadeiramente personalizadas para suas necessidades.
+                Widia nasceu da união entre wie Diamant ("como diamante" em alemão) e o sufixo IA, simbolizando o poder da Inteligência Artificial. Em cada projeto, lapidamos processos e dados com a precisão e resistência de um diamante, gerando automações inteligentes que brilham no mercado e duram no tempo. Com Widia, sua empresa reflete o melhor da IA: solidez, clareza e transformação contínua.
               </p>
               
               <p>
-                Começamos como uma pequena consultoria focada em projetos de automação para o setor de serviços. Nosso primeiro cliente foi uma clínica médica que lutava com agendamentos e processos administrativos. A implementação de um sistema de automação inteligente reduziu em 60% o tempo gasto em tarefas manuais, permitindo que a equipe focasse no atendimento aos pacientes.
+                Nossa equipe soma mais de 20 anos de experiência em desenvolvimento de software, automação e Inteligência Artificial, com atuação nas principais plataformas e tecnologias do mercado, incluindo AWS, Azure, além de especializações em Ciência de Dados e Engenharia de Software.
               </p>
               
               <p>
-                Esse caso inicial de sucesso abriu portas para novos projetos, e rapidamente expandimos nossa equipe e escopo de atuação. Em 2021, com a aceleração da transformação digital causada pela pandemia, notamos uma demanda crescente por soluções mais avançadas de IA.
+                Para garantir resultados sólidos e mensuráveis, adotamos uma abordagem estruturada em 5 fases:
+              </p>
+              
+              <ol className="list-decimal pl-5 space-y-2 my-4">
+                <li><strong>Discovery</strong> – workshops detalhados para mapear e compreender processos críticos do negócio.</li>
+                <li><strong>Design</strong> – criação de protótipos robustos de RPA (Robotic Process Automation) e modelos de Machine Learning (ML).</li>
+                <li><strong>Build</strong> – desenvolvimento ágil com testes automatizados e validações contínuas.</li>
+                <li><strong>Deploy</strong> – implementação segura e escalável das soluções em ambientes de nuvem como AWS e Azure.</li>
+                <li><strong>Support</strong> – acompanhamento constante, com monitoramento e otimização contínua das soluções implementadas.</li>
+              </ol>
+              
+              <p>
+                Nossos pilotos internos demonstraram redução média de 40–60% nas tarefas manuais e ganhos operacionais de cerca de 30%, com entregas rápidas de Provas de Conceito (POCs) funcionais em até 6 semanas.
               </p>
               
               <p>
-                Hoje, somos uma consultoria boutique com especialistas em diversas áreas da tecnologia, atendendo clientes de múltiplos setores. Nossa abordagem continua sendo a mesma desde o primeiro dia: entender profundamente o negócio do cliente e desenvolver soluções sob medida que geram resultados concretos.
+                Com Widia, o seu negócio ganha a solidez de um diamante e a clareza de uma solução IA verdadeiramente transformadora.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-16" ref={teamRef}>
-        <div className="container-custom">
-          <motion.div
-            initial="hidden"
-            animate={isTeamInView ? "visible" : "hidden"}
-            variants={fadeInUp}
-          >
-            <SectionTitle
-              title="Nossa Equipe"
-              subtitle="Conheça os especialistas por trás das nossas soluções"
-              gradient={true}
-            />
-          </motion.div>
-          
-          <motion.div 
-            className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
-            variants={staggerContainer}
-            initial="hidden"
-            animate={isTeamInView ? "visible" : "hidden"}
-          >
-            {teamMembers.map((member, index) => (
-              <motion.div key={index} variants={cardVariants}>
-                <GlassCard className="p-6 h-full flex flex-col">
-                  <div className="mb-6 w-full h-64 rounded-lg overflow-hidden">
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-neon-green mb-4">{member.role}</p>
-                  <p className="text-gray-300 text-sm flex-grow">{member.bio}</p>
-                  <div className="mt-4 pt-4 border-t border-white/10 flex space-x-3">
-                    <a href="#" className="text-gray-400 hover:text-neon-green transition-colors">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-neon-green transition-colors">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                      </svg>
-                    </a>
-                  </div>
-                </GlassCard>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
-      </section>
+      {/* Team Section - Temporarily hidden */}
+      {false && (
+        <section className="py-16" ref={teamRef}>
+          <div className="container-custom">
+            <motion.div
+              initial="hidden"
+              animate={isTeamInView ? "visible" : "hidden"}
+              variants={fadeInUp}
+            >
+              <SectionTitle
+                title="Nossa Equipe"
+                subtitle="Conheça os especialistas por trás das nossas soluções"
+                gradient={true}
+              />
+            </motion.div>
+            
+            <motion.div 
+              className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8"
+              variants={staggerContainer}
+              initial="hidden"
+              animate={isTeamInView ? "visible" : "hidden"}
+            >
+              {teamMembers.map((member, index) => (
+                <motion.div key={index} variants={cardVariants}>
+                  <GlassCard className="p-6 h-full flex flex-col">
+                    <div className="mb-6 w-full h-64 rounded-lg overflow-hidden">
+                      <img 
+                        src={member.image} 
+                        alt={member.name} 
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                    <p className="text-neon-green mb-4">{member.role}</p>
+                    <p className="text-gray-300 text-sm flex-grow">{member.bio}</p>
+                    <div className="mt-4 pt-4 border-t border-white/10 flex space-x-3">
+                      <a href="#" className="text-gray-400 hover:text-neon-green transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                      </a>
+                      <a href="#" className="text-gray-400 hover:text-neon-green transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </GlassCard>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       {/* Values Section */}
       <section className="py-16 bg-gradient-to-r from-bgdark to-bgdark/90" ref={valuesRef}>

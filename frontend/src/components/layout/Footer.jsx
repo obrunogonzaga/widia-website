@@ -57,8 +57,8 @@ const Footer = () => {
             {/* Logo and about */}
             <div className="md:col-span-4">
               <Link to="/" className="text-2xl font-bold flex items-center mb-4">
-                <span className="text-white">Widia</span>
-                <span className="text-neon-green">Digital</span>
+                <span className="text-white">Wid</span>
+                <span className="text-neon-green">ia</span>
               </Link>
               <p className="text-gray-400 mb-6">
                 Consultoria boutique especializada em criar automações e copilots baseados em IA para PMEs brasileiras.

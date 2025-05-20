@@ -92,8 +92,8 @@ const Header = () => {
           to="/"
           className="text-2xl font-bold flex items-center"
         >
-          <span className="text-white">Widia</span>
-          <span className="text-neon-green">Digital</span>
+          <span className="text-white">Wid</span>
+          <span className="text-neon-green">ia</span>
         </Link>
         
         {/* Desktop Navigation */}
